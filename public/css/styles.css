@@ -26,6 +26,7 @@ h2 {
 img {
     width: 25vw;
     margin: 20px;
+    min-width: 150px;
 }
 
 h3 {
@@ -64,6 +65,7 @@ input {
 .grid-item-zip {
     width: 60%;
 }
+
 select {
     border-radius: 5px;
     padding-inline: 10px;
@@ -118,15 +120,80 @@ select {
     margin-left: -2px;
     width: 110%;
 }
-.grid-container {
+
+.global-container {
     display: flex;
     width: 100%;
     gap: 40px;
 }
 
+.global-item {
+    width: 70%;
+}
+
+.global-item2 {
+    width: 30%;
+}
+
+.grid-container {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+}
+.grid-container3 {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+}
 .grid-item {
     width: 100%;
 }
+
+button {
+    width: 70%;
+    font-size: 20px;
+    color: white;
+    background-color: #1785de;
+    border-radius: 5px;
+    border: 0px;
+    height: 45px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .global-container {
+        display: inline;
+        width: 100%;
+    }
+    .global-item {
+        width: 100%;
+    }
+
+    .global-item2 {
+        width: 100%;
+    }
+
+    .grid-container{
+        display: inline;
+        width: 100%;
+
+    }
+
+    .grid-item-zip {
+        width: 100%;
+    }
+    
+    .select-container {
+        width: 105%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+
 
 .checkbox {
     position: absolute;
@@ -214,17 +281,7 @@ select {
     color: #7d7d7d;
 }
 
-button {
-    width: 100%;
-    font-size: 20px;
-    color: white;
-    background-color: #1785de;
-    border-radius: 5px;
-    border: 0px;
-    height: 45px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
+
 
 footer {
     margin: 30px;
@@ -248,13 +305,7 @@ a {
     color: #44abff;
 }
 
-.global-item {
-    width: 70%;
-}
 
-.global-item2 {
-    width: 30%;
-}
 
 h5 {
     margin: 0;
